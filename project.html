@@ -1,0 +1,270 @@
+<PENDING-CART></PENDING-CART>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My E-Commerce Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <PENDING-CART></PENDING-CART>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopMate | Your Favorite E-commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --secondary: #f9f9f9;
+      --text: #333;
+      --light: #fff;
+    }
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--light);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .navbar {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--light);
+        flex-direction: column;
+        width: 200px;
+        border: 1px solid #ddd;
+        display: none;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1400x600') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: var(--light);
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #1667c1;
+    }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .products {
+      margin-bottom: 2rem;
+    }
+    .products h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background-color: var(--light);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card img {
+      width: 100%;
+      display: block;
+    }
+    .product-info {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-info h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .product-info .price {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .product-info button {
+      margin-top: 1rem;
+      background-color: var(--primary);
+      color: var(--light);
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .product-info button:hover {
+      background-color: #1667c1;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Pending Cart</div>
+      <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#deals">Deals</a></li>
+        <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Amazing Products</h1>
+      <p>Find the best deals on quality items</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <main id="shop">
+    <section class="products">
+      <h2>Newly Arrival Products</h2>
+      <div class="product-grid">
+        <!-- Example Product Cards -->
+        <div class="product-card">
+            <img src="images/WhatsApp Image 2025-04-19 at 10.50.16 PM.jpeg" alt="">
+          <div class="product-info">
+            <h3>AppleIPhone 15(Black, 128GB)</h3>
+            <div class="price">₹64,400</div>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+         <img src="images/WhatsApp Image 2025-04-19 at 10.50.16 PM.jpeg" alt="">
+          <div class="product-info">
+            <h3>AppleIPhone 15(Black, 256GB)</h3>
+            <div class="price">₹74,400</div>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+            <img src="images/WhatsApp Image 2025-04-19 at 10.50.16 PM.jpeg" alt="">
+          <div class="product-info">
+            <h3>AppleIPhone 15(Black, 512GB)</h3>
+            <div class="price">₹94,400</div>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pending Cart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
